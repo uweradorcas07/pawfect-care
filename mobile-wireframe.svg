@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="1510" viewBox="0 0 510 1510">
+  <style>text{font-family:Arial,sans-serif;fill:#222} .title{font-size:21px;font-weight:bold}.label{font-size:16px;font-weight:bold}.small{font-size:13px}.box{fill:#f5f5f5;stroke:#555;stroke-width:1.5}.button{fill:white;stroke:#555;stroke-width:1.5}</style>
+  <rect width="510" height="1510" fill="white"/>
+  <text x="60" y="35" class="title">Pawfect Care</text>
+  <text x="60" y="58" class="small">Mobile homepage wireframe · 390px viewport</text>
+  <rect x="60" y="80" width="390" height="1370" fill="white" stroke="#222" stroke-width="2"/>
+  <rect x="60" y="80" width="390" height="65" class="box"/>
+  <text x="76" y="118" class="label">1. Pawfect Care</text>
+  <rect x="392" y="96" width="40" height="32" class="button"/>
+  <path d="M401 104h22 M401 112h22 M401 120h22" stroke="#333" stroke-width="2"/>
+  <text x="76" y="174" class="small">2. Home breadcrumb</text>
+  <rect x="76" y="192" width="358" height="148" class="box"/>
+  <path d="M76 192L434 340 M434 192L76 340" stroke="#bbb"/>
+  <rect x="124" y="252" width="262" height="40" fill="#f5f5f5"/>
+  <text x="255" y="277" text-anchor="middle" class="label">3. Animal image carousel</text>
+  <text x="92" y="319" class="label">‹</text><text x="412" y="319" class="label">›</text>
+  <rect x="120" y="350" width="270" height="65" class="button"/>
+  <text x="255" y="377" text-anchor="middle" class="small">Slide heading</text>
+  <text x="255" y="399" text-anchor="middle" class="small">Short caption</text>
+  <rect x="278" y="435" width="156" height="38" class="button"/>
+  <text x="356" y="459" text-anchor="middle" class="small">4. Pause / Resume</text>
+  <rect x="76" y="491" width="358" height="270" rx="12" class="box"/>
+  <text x="94" y="519" class="small">5. FOR THE LOVE OF PAWS</text>
+  <text x="94" y="554" class="title">Little paws. Big love.</text>
+  <text x="94" y="590" class="small">Welcome and brief website introduction</text>
+  <path d="M94 609h302 M94 628h275" stroke="#aaa" stroke-width="3"/>
+  <rect x="94" y="650" width="220" height="38" class="button"/>
+  <text x="204" y="674" text-anchor="middle" class="small">Explore Pet Care</text>
+  <rect x="94" y="704" width="220" height="38" class="button"/>
+  <text x="204" y="728" text-anchor="middle" class="small">About This Project</text>
+  <text x="76" y="800" class="label">6. A little care. A closer connection.</text>
+  <text x="76" y="824" class="small">Short introduction to the three links below</text>
+  <rect x="76" y="844" width="358" height="165" rx="12" class="box"/>
+  <rect x="94" y="860" width="36" height="36" class="button"/><text x="112" y="884" text-anchor="middle" class="small">Icon</text>
+  <text x="94" y="923" class="label">Understand your companion</text>
+  <text x="94" y="945" class="small">Short pet care description</text>
+  <rect x="94" y="959" width="322" height="34" class="button"/>
+  <text x="255" y="981" text-anchor="middle" class="small">Explore Pet Care</text>
+  <rect x="76" y="1025" width="358" height="165" rx="12" class="box"/>
+  <rect x="94" y="1041" width="36" height="36" class="button"/><text x="112" y="1065" text-anchor="middle" class="small">Icon</text>
+  <text x="94" y="1104" class="label">Meet the little faces</text>
+  <text x="94" y="1126" class="small">Short gallery description</text>
+  <rect x="94" y="1140" width="322" height="34" class="button"/>
+  <text x="255" y="1162" text-anchor="middle" class="small">Meet the Animals</text>
+  <rect x="76" y="1206" width="358" height="165" rx="12" class="box"/>
+  <rect x="94" y="1222" width="36" height="36" class="button"/><text x="112" y="1246" text-anchor="middle" class="small">Icon</text>
+  <text x="94" y="1285" class="label">Make care a habit</text>
+  <text x="94" y="1307" class="small">Short planner description</text>
+  <rect x="94" y="1321" width="322" height="34" class="button"/>
+  <text x="255" y="1343" text-anchor="middle" class="small">Create a Care Plan</text>
+  <rect x="60" y="1387" width="390" height="63" class="box"/>
+  <text x="255" y="1413" text-anchor="middle" class="label">7. Pawfect Care</text>
+  <text x="255" y="1435" text-anchor="middle" class="small">Copyright and student project note</text>
+  <text x="60" y="1480" class="small">Schematic layout. Page scrolls vertically. Boxes are not to scale.</text>
+</svg>

@@ -1,0 +1,27 @@
+PAWFECT CARE - MOBILE HOMEPAGE WIREFRAME
+
+This wireframe shows the homepage structure at a typical smartphone width of approximately 390 pixels. It is a schematic diagram rather than an exact screenshot. The page scrolls vertically.
+
+1. Header and navigation
+The project name appears at the top beside a menu button. Opening the menu reveals six links: Home, Pet Care, Animal Directory, Gallery, About, and Care Planner.
+
+2. Breadcrumb
+A small Home label identifies the current page location.
+
+3. Carousel
+The Bootstrap carousel sits near the top below the navigation. It cycles through dog, cat, and rabbit photographs. On smartphones, short captions appear in a separate panel below each photo so they do not cover the animal. On wider screens, captions overlay the photos. Previous and next arrows let visitors choose a slide.
+
+4. Pause control
+A Pause slideshow button below the carousel stops automatic rotation. Its label changes to Resume slideshow when paused.
+
+5. Welcome section
+The heading, introductory paragraph, and two buttons introduce the project and link to Pet Care and About. Buttons can wrap onto separate lines on narrow screens.
+
+6. Exploration cards
+Three cards introduce Pet Care, Gallery, and Care Planner. Each has an icon, heading, short description, and link button. They stack vertically on smartphones and form three columns on large screens.
+
+7. Footer
+The footer displays the project name, copyright information, and a student project note.
+
+Responsive design
+Bootstrap containers and columns adjust the layout to the available width. Navigation collapses into a menu button. Images resize within their areas, text wraps, and the cards use a single column on mobile.

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pawfect Care | Home</title>
+
+  <!-- Bootstrap styles -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Our own styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          🐾 Pawfect Care
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                 href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pet-care.html">Pet Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animal-directory.html">
+                Animal Directory
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="care-planner.html">Care Planner</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-4">
+    <!-- Breadcrumb navigation -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">
+          Home
+        </li>
+      </ol>
+    </nav>
+
+<div id="petCarousel" class="carousel slide"
+     data-bs-ride="carousel" data-bs-interval="2500">
+
+  <div class="carousel-inner">
+
+    <!-- First slide: dog -->
+    <div class="carousel-item active">
+      <img src="images/dog.jpg" alt="A dog" class="d-block w-100">
+
+      <div class="carousel-caption">
+        <h2>Little paws. Big love.</h2>
+        <p>Discover the joy of life with pets.</p>
+      </div>
+    </div>
+
+    <!-- Second slide: cat -->
+    <div class="carousel-item">
+  <img src="images/cat.jpg" alt="A cat" class="d-block w-100">
+
+  <div class="carousel-caption">
+    <h2>Curious paws, happy homes.</h2>
+    <p>Get to know our feline friends.</p>
+  </div>
+</div>
+
+    <!-- Third slide: rabbit -->
+   <div class="carousel-item">
+  <img src="images/rabbit.jpg" alt="A rabbit" class="d-block w-100">
+
+  <div class="carousel-caption">
+    <h2>Small pets, big personalities.</h2>
+    <p>Meet our smaller furry companions.</p>
+  </div>
+</div>
+</div>
+
+  <!-- Previous arrow -->
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#petCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous photo</span>
+  </button>
+
+  <!-- Next arrow -->
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#petCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next photo</span>
+  </button>
+
+</div>
+<div class="d-flex justify-content-end mt-3">
+  <button id="carouselToggle" type="button"
+          class="btn btn-outline-success"
+          aria-controls="petCarousel">
+    Pause slideshow
+  </button>
+</div>
+    <!-- Welcome section -->
+    <section class="welcome-section rounded-4 p-4 p-md-5 my-4">
+      <p class="text-success fw-bold">FOR THE LOVE OF PAWS</p>
+
+      <h1 class="display-4 fw-bold">
+        Little paws. Big love.
+      </h1>
+
+      <p class="lead">
+        Welcome to Pawfect Care, a place for people who love animals.
+        Explore pet care ideas, discover different animals, and
+        organise everyday care for your furry friends.
+      </p>
+
+      <div class="d-flex flex-wrap gap-2">
+        <a href="pet-care.html" class="btn btn-success btn-lg">
+          Explore Pet Care
+        </a>
+
+        <a href="about.html" class="btn btn-outline-success btn-lg">
+          About This Project
+        </a>
+      </div>
+    </section>
+
+  <section class="py-4" aria-labelledby="exploreHeading">
+  <h2 id="exploreHeading">A little care. A closer connection.</h2>
+  <p class="mb-4">
+    Get to know animals, find inspiration, and make time for everyday care.
+  </p>
+
+  <div class="row g-4">
+
+    <div class="col-12 col-lg-4">
+      <article class="card explore-card h-100">
+        <div class="card-body d-flex flex-column p-4">
+          <span class="explore-icon" aria-hidden="true">♡</span>
+          <h3 class="h4 mt-3">Understand your companion</h3>
+          <p>
+            Explore life with dogs, cats, and smaller pets.
+            Every companion has a personality worth getting to know.
+          </p>
+          <a href="pet-care.html"
+             class="btn btn-outline-success mt-auto">
+            Explore Pet Care
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <article class="card explore-card h-100">
+        <div class="card-body d-flex flex-column p-4">
+          <span class="explore-icon" aria-hidden="true">🐾</span>
+          <h3 class="h4 mt-3">Meet the little faces</h3>
+          <p>
+            Visit our animal gallery and discover why these
+            three furry faces became part of Pawfect Care.
+          </p>
+          <a href="gallery.html"
+             class="btn btn-outline-success mt-auto">
+            Meet the Animals
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <article class="card explore-card h-100">
+        <div class="card-body d-flex flex-column p-4">
+          <span class="explore-icon" aria-hidden="true">✓</span>
+          <h3 class="h4 mt-3">Make care a habit</h3>
+          <p>
+            Keep your pet's details and everyday notes together.
+            Save your plan and return whenever you need it.
+          </p>
+          <a href="care-planner.html"
+             class="btn btn-success mt-auto">
+            Create a Care Plan
+          </a>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+  </main>
+
+  <footer class="border-top py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">🐾 Pawfect Care</p>
+      <p class="text-body-secondary small mb-0">
+        © 2026 Pawfect Care · A student project made with love for animals.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap makes the mobile menu work -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

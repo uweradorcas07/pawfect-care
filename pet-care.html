@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>Pawfect Care | Pet Care</title>
+
+  <!-- Bootstrap styles -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Our own styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          🐾 Pawfect Care
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+             <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link active" aria-current="page"
+               href="pet-care.html">Pet Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animal-directory.html">
+                Animal Directory
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="care-planner.html">Care Planner</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main class="container py-4">
+
+  <!-- Breadcrumb navigation -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Pet Care
+      </li>
+    </ol>
+  </nav>
+
+  <section class="care-intro">
+  <div class="care-intro-text">
+    <span class="scrapbook-label">THE PAWFECT CARE CLUB</span>
+
+    <h1>Little paws.<br>Lots to learn.</h1>
+
+    <p>
+      From zoomies to quiet cuddles, every companion has their own
+      way of being. Get to know yours a little better.
+    </p>
+
+    <span class="care-note">Made with love for every little companion ♡</span>
+  </div>
+
+  <figure class="care-photo">
+    <img src="images/dog.jpg"
+         alt="A golden retriever puppy resting on the grass">
+    <figcaption>Your daily dose of happy paws</figcaption>
+  </figure>
+</section>
+<!-- Three clickable tabs -->
+<ul class="nav nav-tabs mt-4" id="careTabs" role="tablist">
+
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link active"
+      id="dogs-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#dogs"
+      type="button"
+      role="tab"
+      aria-controls="dogs"
+      aria-selected="true"
+    >
+      Dogs
+    </button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link"
+      id="cats-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#cats"
+      type="button"
+      role="tab"
+      aria-controls="cats"
+      aria-selected="false"
+    >
+      Cats
+    </button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link"
+      id="small-pets-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#small-pets"
+      type="button"
+      role="tab"
+      aria-controls="small-pets"
+      aria-selected="false"
+    >
+      Small Pets
+    </button>
+  </li>
+
+</ul>
+
+<!-- Text displayed beneath the tabs -->
+<div class="tab-content border border-top-0 rounded-bottom p-4">
+
+  <div
+    class="tab-pane fade show active"
+    id="dogs"
+    role="tabpanel"
+    aria-labelledby="dogs-tab"
+    tabindex="0"
+  >
+    <h2>Happy paws, happy days</h2>
+<p>
+  Make room for exploring, learning, and playing together.
+  Choose activities that suit your dog's interests and abilities.
+</p>
+
+<div class="row g-3 my-2">
+  <div class="col-12 col-md-4">
+    <h3 class="h5">01 · Follow their nose</h3>
+    <p>
+      Let your dog pause to investigate interesting smells on a walk.
+      Exploring with their nose gives them something to think about.
+    </p>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <h3 class="h5">02 · Celebrate small wins</h3>
+    <p>
+      Practise a familiar cue and reward success with praise,
+      a favourite toy, or a suitable treat.
+      Keep learning enjoyable.
+    </p>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <h3 class="h5">03 · Play a finding game</h3>
+    <p>
+      Hide a favourite toy somewhere easy to reach and let your
+      dog find it. Start simply and make the game harder gradually.
+    </p>
+  </div>
+</div>
+
+<a href="care-planner.html" class="btn btn-success mt-2">
+  Add an idea to my care plan
+</a>
+
+<p class="small mt-3 mb-0">
+  Further reading:
+  <a href="https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs">
+    Dogs Trust activity ideas
+  </a>
+  and
+  <a href="https://www.rspca.org.uk/adviceandwelfare/pets/dogs/training">
+    RSPCA reward-based training
+  </a>.
+</p>
+   
+  </div>
+
+  <div
+    class="tab-pane fade"
+    id="cats"
+    role="tabpanel"
+    aria-labelledby="cats-tab"
+    tabindex="0"
+  >
+    <h2>Curious minds, cosy corners</h2>
+<p>
+  Give your cat opportunities to play, scratch, and retreat
+  somewhere quiet. Let them choose when to join in.
+</p>
+
+<div class="row g-3 my-2">
+  <div class="col-12 col-md-4">
+    <h3 class="h5">01 · Bring out the hunter</h3>
+    <p>
+      Move a wand toy for your cat to stalk, chase, and catch.
+      Put toys with strings away after supervised play.
+    </p>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <h3 class="h5">02 · Make a cosy hideaway</h3>
+    <p>
+      Offer a quiet hiding place, such as a cardboard box.
+      Give your cat space when they choose to rest inside.
+    </p>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <h3 class="h5">03 · Room to scratch</h3>
+    <p>
+      Provide a sturdy scratching post or pad.
+      Notice whether your cat prefers stretching upwards
+      or scratching a horizontal surface.
+    </p>
+  </div>
+</div>
+
+<a href="care-planner.html" class="btn btn-success mt-2">
+  Plan my cat's routine
+</a>
+
+<p class="small mt-3 mb-0">
+  Further reading:
+  <a href="https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-play">
+    Cats Protection play ideas
+  </a>
+  and
+  <a href="https://www.bluecross.org.uk/advice/cat/how-to-play-with-your-cat">
+    Blue Cross play guidance
+  </a>.
+</p>
+  </div>
+
+  <div
+    class="tab-pane fade"
+    id="small-pets"
+    role="tabpanel"
+    aria-labelledby="small-pets-tab"
+    tabindex="0"
+  >
+    <h2>Small companions, individual needs</h2>
+<p>
+  Rabbits, guinea pigs, and hamsters enjoy different activities.
+  Choose enrichment designed for your pet's species and size.
+</p>
+
+<div class="row g-3 my-2">
+  <div class="col-12 col-md-4">
+    <h3 class="h5">01 · Rabbits love exploring</h3>
+    <p>
+      Provide roomy tunnels and a digging box filled with
+      rabbit-safe materials, such as hay or shredded paper.
+      Leave plenty of space to move around.
+    </p>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <h3 class="h5">02 · Guinea pigs need hideaways</h3>
+    <p>
+      Offer shelters and tunnels so your guinea pigs can move
+      between places where they feel secure.
+      Keep their activity area at ground level.
+    </p>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <h3 class="h5">03 · Hamsters are burrowers</h3>
+    <p>
+      Provide deep, suitable bedding that allows your hamster
+      to dig and build tunnels. Add appropriately sized
+      cardboard tubes for exploring.
+    </p>
+  </div>
+</div>
+
+<a href="care-planner.html" class="btn btn-success mt-2">
+  Plan my small pet's routine
+</a>
+
+<p class="small mt-3 mb-0">
+  Further reading:
+  <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rabbits/behaviour/enrichment">
+    Rabbit activities
+  </a>,
+  <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/environment">
+    Guinea pig homes
+  </a>
+  and
+  <a href="https://www.bluecross.org.uk/advice/hamster/hamster-care">
+    Hamster care
+  </a>.
+</p>
+  </div>
+
+</div>
+</main>
+  <footer class="border-top py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">🐾 Pawfect Care</p>
+      <p class="text-body-secondary small mb-0">
+        © 2026 Pawfect Care · A student project made with love for animals.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap makes the mobile menu work -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

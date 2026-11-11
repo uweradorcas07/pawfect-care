@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Pawfect Care | Animal Directory</title>
+  <!-- Bootstrap styles -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Our own styles -->
+  <link rel="stylesheet"
+      href="https://cdn.datatables.net/2.3.4/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          🐾 Pawfect Care
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pet-care.html">Pet Care</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link active" aria-current="page"
+                href="animal-directory.html">
+                Animal Directory
+                 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="care-planner.html">Care Planner</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main class="container py-4">
+  <nav aria-label="Breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Animal Directory
+      </li>
+    </ol>
+  </nav>
+
+  <h1>Animal Directory</h1>
+  <p class="lead">
+    Explore a collection of animal breeds and discover their differences.
+  </p>
+<div class="table-responsive mt-4">
+  <table id="animalTable" class="table table-striped table-bordered">
+    <caption>Animal breeds in the Pawfect Care directory</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Number</th>
+        <th scope="col">Breed</th>
+        <th scope="col">Animal</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Golden Retriever</td>
+        <td>Dog</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Persian</td>
+        <td>Cat</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Holland Lop</td>
+        <td>Rabbit</td>
+      </tr>
+    <tr><td>4</td><td>Labrador Retriever</td><td>Dog</td></tr>
+<tr><td>5</td><td>German Shepherd</td><td>Dog</td></tr>
+<tr><td>6</td><td>Beagle</td><td>Dog</td></tr>
+<tr><td>7</td><td>Boxer</td><td>Dog</td></tr>
+<tr><td>8</td><td>Border Collie</td><td>Dog</td></tr>
+<tr><td>9</td><td>Dalmatian</td><td>Dog</td></tr>
+<tr><td>10</td><td>Dachshund</td><td>Dog</td></tr>
+<tr><td>11</td><td>Doberman Pinscher</td><td>Dog</td></tr>
+<tr><td>12</td><td>English Bulldog</td><td>Dog</td></tr>
+<tr><td>13</td><td>French Bulldog</td><td>Dog</td></tr>
+<tr><td>14</td><td>Great Dane</td><td>Dog</td></tr>
+<tr><td>15</td><td>Pomeranian</td><td>Dog</td></tr>
+<tr><td>16</td><td>Poodle</td><td>Dog</td></tr>
+<tr><td>17</td><td>Pug</td><td>Dog</td></tr>
+<tr><td>18</td><td>Rottweiler</td><td>Dog</td></tr>
+<tr><td>19</td><td>Samoyed</td><td>Dog</td></tr>
+<tr><td>20</td><td>Shiba Inu</td><td>Dog</td></tr>
+<tr><td>21</td><td>Shih Tzu</td><td>Dog</td></tr>
+<tr><td>22</td><td>Siberian Husky</td><td>Dog</td></tr>
+<tr><td>23</td><td>Yorkshire Terrier</td><td>Dog</td></tr>
+<tr><td>24</td><td>Abyssinian</td><td>Cat</td></tr>
+<tr><td>25</td><td>American Shorthair</td><td>Cat</td></tr>
+<tr><td>26</td><td>Bengal</td><td>Cat</td></tr>
+<tr><td>27</td><td>Birman</td><td>Cat</td></tr>
+<tr><td>28</td><td>British Shorthair</td><td>Cat</td></tr>
+<tr><td>29</td><td>Burmese</td><td>Cat</td></tr>
+<tr><td>30</td><td>Chartreux</td><td>Cat</td></tr>
+<tr><td>31</td><td>Devon Rex</td><td>Cat</td></tr>
+<tr><td>32</td><td>Egyptian Mau</td><td>Cat</td></tr>
+<tr><td>33</td><td>Exotic Shorthair</td><td>Cat</td></tr>
+<tr><td>34</td><td>Maine Coon</td><td>Cat</td></tr>
+<tr><td>35</td><td>Norwegian Forest Cat</td><td>Cat</td></tr>
+<tr><td>36</td><td>Oriental Shorthair</td><td>Cat</td></tr>
+<tr><td>37</td><td>Ragdoll</td><td>Cat</td></tr>
+<tr><td>38</td><td>Russian Blue</td><td>Cat</td></tr>
+<tr><td>39</td><td>Scottish Fold</td><td>Cat</td></tr>
+<tr><td>40</td><td>Siamese</td><td>Cat</td></tr>
+<tr><td>41</td><td>Siberian</td><td>Cat</td></tr>
+<tr><td>42</td><td>Sphynx</td><td>Cat</td></tr>
+<tr><td>43</td><td>Dutch</td><td>Rabbit</td></tr>
+<tr><td>44</td><td>English Lop</td><td>Rabbit</td></tr>
+<tr><td>45</td><td>Flemish Giant</td><td>Rabbit</td></tr>
+<tr><td>46</td><td>French Lop</td><td>Rabbit</td></tr>
+<tr><td>47</td><td>Lionhead</td><td>Rabbit</td></tr>
+<tr><td>48</td><td>Mini Rex</td><td>Rabbit</td></tr>
+<tr><td>49</td><td>Netherland Dwarf</td><td>Rabbit</td></tr>
+<tr><td>50</td><td>Rex</td><td>Rabbit</td></tr>
+</tbody>
+  </table>
+</div>
+</main>
+  <footer class="border-top py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">🐾 Pawfect Care</p>
+      <p class="text-body-secondary small mb-0">
+        © 2026 Pawfect Care · A student project made with love for animals.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap makes the mobile menu work -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.4/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+  new DataTable("#animalTable");
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

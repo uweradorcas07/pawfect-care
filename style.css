@@ -1,0 +1,633 @@
+/* PAWFECT CARE — SCRAPBOOK THEME */
+
+/* 1. Page colours and typography */
+body {
+  background-color: #baa5af;
+  color: #392a36;
+  font-family: Arial, sans-serif;
+}
+
+main > h1,
+.welcome-section h1,
+.welcome-section h2,
+#exploreHeading,
+.explore-card h3,
+.animal-card .card-title,
+#careTabs + .tab-content h2,
+.tab-pane .row > div h3 {
+  color: #392a36;
+  font-family: Georgia, serif;
+  font-weight: 700;
+}
+
+.text-success {
+  color: #503b4b !important;
+}
+
+/* 2. Navigation, breadcrumbs, and footer */
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.navbar.bg-success {
+  background-color: #503b4b !important;
+  border-bottom: 2px solid #68446d;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover,
+.navbar .nav-link,
+.navbar .nav-link:hover {
+  color: #f6e9ee;
+}
+
+.navbar .nav-link {
+  margin: 3px;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.navbar .nav-link.active {
+  color: #392a36;
+  background-color: #ead8dc;
+}
+
+.navbar .navbar-toggler {
+  background-color: #68446d;
+  border-color: #68446d;
+}
+
+.breadcrumb {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+  background-color: #fff5f8;
+  border: 1px solid #dfbfd8;
+  border-radius: 20px;
+}
+
+.breadcrumb a {
+  color: #7b2856;
+}
+
+footer {
+  background-color: #503b4b;
+  color: #f6e9ee;
+  border-top: 2px solid #503b4b !important;
+}
+
+footer p,
+footer .text-body-secondary {
+  color: #f6e9ee !important;
+}
+
+/* 3. Shared buttons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-success {
+  background-color: #503b4b;
+  border-color: #503b4b;
+}
+
+.btn-success:hover,
+.btn-success:active {
+  background-color: #392a36;
+  border-color: #392a36;
+}
+
+.btn-outline-success {
+  color: #503b4b;
+  border-color: #503b4b;
+}
+
+.btn-outline-success:hover {
+  color: #f6e9ee;
+  background-color: #503b4b;
+  border-color: #503b4b;
+}
+
+.btn:focus-visible {
+  outline: 3px solid #503b4b;
+  outline-offset: 3px;
+}
+
+/* 4. Scrapbook paper and bows */
+.care-intro,
+.welcome-section {
+  position: relative;
+  background-color: #ddc4ce;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0 16px,
+    rgba(80, 59, 75, 0.045) 16px 18px
+  );
+  border: 2px solid #503b4b;
+  box-shadow: 6px 6px 0 #a77e90;
+}
+
+.care-intro::before,
+.care-intro::after,
+.welcome-section::before,
+.welcome-section::after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  width: 62px;
+  height: 40px;
+  pointer-events: none;
+  background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 58'%3E%3Cg fill='%23a77e90' stroke='%23503b4b' stroke-width='2' stroke-linejoin='round'%3E%3Cpath d='M42 27Q10 0 5 14Q0 42 40 32Z'/%3E%3Cpath d='M48 27Q80 0 85 14Q90 42 50 32Z'/%3E%3Cpath d='M40 31L24 53L37 49L43 56L47 33Z'/%3E%3Cpath d='M50 31L66 53L53 49L47 56L43 33Z'/%3E%3Crect x='38' y='22' width='14' height='14' rx='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.care-intro::before,
+.welcome-section::before {
+  left: 24px;
+  transform: rotate(-12deg);
+}
+
+.care-intro::after,
+.welcome-section::after {
+  right: 24px;
+  transform: rotate(12deg);
+}
+
+/* 5. Animal photographs and homepage slideshow */
+#petCarousel img,
+.care-photo img,
+.animal-card .card-img-top {
+  filter: saturate(0.72) sepia(0.12);
+}
+
+#petCarousel {
+  padding: 14px;
+  background-color: #e9dfd5;
+  border: 2px solid #503b4b;
+  border-radius: 24px;
+  box-shadow: 6px 6px 0 #a77e90;
+}
+
+#petCarousel .carousel-inner {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#petCarousel img {
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #503b4b;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+#petCarousel .carousel-caption {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 500px;
+  background-color: rgba(57, 42, 54, 0.9);
+}
+
+.carousel-caption h2 {
+  font-size: 1.4rem;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
+}
+
+/* 6. Homepage and Gallery cards */
+.explore-card,
+.animal-card {
+  background-color: #adb8a5;
+  border: 2px solid #503b4b;
+  box-shadow: 5px 5px 0 #a77e90;
+}
+
+.explore-card {
+  border-radius: 24px;
+}
+
+.animal-card {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.row > div:nth-child(2) > .explore-card,
+.row > div:nth-child(2) > .animal-card {
+  background-color: #b4a6bf;
+}
+
+.row > div:nth-child(3) > .explore-card,
+.row > div:nth-child(3) > .animal-card {
+  background-color: #a3b4c1;
+}
+
+.explore-card p {
+  color: #392a36;
+  line-height: 1.7;
+}
+
+.explore-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: #503b4b;
+  color: #f6e9ee;
+  border-radius: 16px;
+  font-size: 1.8rem;
+}
+
+.animal-card .card-img-top {
+  height: 260px;
+  object-fit: contain;
+  background-color: transparent;
+  padding: 12px;
+}
+
+.animal-card .card-body {
+  padding: 24px;
+  color: #392a36;
+}
+
+.animal-card .card-text {
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* 7. Pet Care introduction and framed photo */
+.care-intro {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  gap: 32px;
+  margin: 24px 0 40px;
+  padding: 40px;
+  border-radius: 32px;
+  background-size: 18px 18px;
+  box-shadow: 7px 7px 0 #a77e90;
+}
+
+.scrapbook-label {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #503b4b;
+  border-radius: 30px;
+  background-color: #503b4b;
+  color: #f6e9ee;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.care-intro h1 {
+  margin: 20px 0;
+  color: #392a36;
+  font-family: Georgia, serif;
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.care-intro p {
+  max-width: 440px;
+  color: #392a36;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.care-note {
+  display: inline-block;
+  margin-top: 8px;
+  color: #392a36;
+  font-style: italic;
+}
+
+.care-photo {
+  margin: 0;
+  padding: 12px 12px 20px;
+  border: 1px solid #d3bfd9;
+  background-color: #e9dfd5;
+  box-shadow: 0 8px 18px rgba(81, 52, 85, 0.15);
+  transform: rotate(3deg);
+}
+
+.care-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background-color: #e9dfd5;
+}
+
+.care-photo figcaption {
+  padding-top: 14px;
+  color: #392a36;
+  font-family: Georgia, serif;
+  text-align: center;
+  font-style: italic;
+}
+
+/* 8. Pet Care tabs and numbered notes */
+#careTabs {
+  gap: 10px;
+  border-bottom: 0;
+  margin-bottom: 16px;
+}
+
+#careTabs .nav-link {
+  padding: 10px 22px;
+  color: #392a36;
+  background-color: #ddc4ce;
+  border: 2px solid #503b4b;
+  border-radius: 24px;
+  font-weight: 700;
+}
+
+#careTabs .nav-link:hover {
+  background-color: #cba7b6;
+}
+
+#careTabs .nav-link.active {
+  background-color: #503b4b;
+  color: #f6e9ee;
+  border-color: #503b4b;
+  box-shadow: 3px 3px 0 #a77e90;
+}
+
+#careTabs .nav-link:focus-visible {
+  outline: 3px solid #68446d;
+  outline-offset: 3px;
+}
+
+#careTabs + .tab-content {
+  background-color: #ead8dc;
+  color: #392a36;
+  border: 2px solid #503b4b !important;
+  border-radius: 24px !important;
+  box-shadow: 6px 6px 0 #a77e90;
+}
+
+.tab-pane .row {
+  gap: 16px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.tab-pane .row > div {
+  width: 100%;
+  margin-top: 0;
+  padding: 20px;
+  background-color: #adb8a5;
+  border: 2px dashed #786175;
+  border-radius: 18px;
+  background-clip: padding-box;
+}
+
+.tab-pane .row > div:nth-child(2) {
+  background-color: #b4a6bf;
+}
+
+.tab-pane .row > div:nth-child(3) {
+  background-color: #a3b4c1;
+}
+
+.tab-pane .row > div p {
+  margin-bottom: 0;
+}
+
+/* 9. Animal information boxes */
+.modal-content {
+  color: #392a36;
+  background-color: #ddc4ce;
+  border: 2px solid #503b4b;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: #b4a6bf;
+  border-bottom: 1px solid #503b4b;
+  padding: 20px 24px;
+}
+
+.modal-title {
+  color: #392a36;
+  font-family: Georgia, serif;
+  font-weight: 700;
+}
+
+.modal-body {
+  padding: 24px;
+  line-height: 1.7;
+}
+
+/* 10. Care Planner fields and messages */
+#careForm {
+  padding: 28px;
+  background-color: #b4a6bf;
+  color: #392a36;
+  border: 2px solid #503b4b;
+  border-top: 6px solid #503b4b;
+  border-radius: 24px;
+  box-shadow: 6px 6px 0 #a77e90;
+}
+
+#careForm .form-label,
+#careForm legend {
+  font-weight: 600;
+}
+
+#careForm .form-control,
+#careForm .form-select,
+#animalTable_wrapper .form-control,
+#animalTable_wrapper .form-select {
+  background-color: #e5dce7;
+  color: #392a36;
+  border-color: #786175;
+}
+
+#careForm .input-group-text {
+  background-color: #c4a3b0;
+  color: #392a36;
+  border-color: #786175;
+}
+
+#careForm .form-text {
+  color: #493747;
+}
+
+#careForm .form-control:focus,
+#careForm .form-select:focus,
+#animalTable_wrapper .form-control:focus,
+#animalTable_wrapper .form-select:focus {
+  border-color: #503b4b;
+  box-shadow: 0 0 0 3px rgba(80, 59, 75, 0.2);
+}
+
+#careForm .form-check-input {
+  border-color: #786175;
+}
+
+#careForm .form-check-input:checked {
+  background-color: #503b4b;
+  border-color: #503b4b;
+}
+
+#saveMessage.alert {
+  color: #392a36;
+  border: 1px solid #503b4b;
+  border-radius: 16px;
+}
+
+#saveMessage.alert-info {
+  background-color: #a3b4c1;
+}
+
+#saveMessage.alert-success {
+  background-color: #da2c7d;
+  color: #ffffff;
+}
+
+#saveMessage.alert-warning,
+#saveMessage.alert-danger {
+  background-color: #ddc4ce;
+}
+
+/* 11. Animal Directory table and page buttons */
+#animalTable {
+  --bs-table-color: #392a36;
+  --bs-table-bg: #ddc4ce;
+  --bs-table-striped-color: #392a36;
+  --bs-table-striped-bg: #c5b6ce;
+  --bs-table-border-color: #8d7588;
+}
+
+#animalTable thead th {
+  background-color: #503b4b;
+  color: #f6e9ee;
+}
+
+#animalTable caption {
+  color: #392a36;
+}
+
+#animalTable_wrapper .pagination {
+  --bs-pagination-color: #503b4b;
+  --bs-pagination-bg: #ddc4ce;
+  --bs-pagination-border-color: #8d7588;
+  --bs-pagination-hover-color: #392a36;
+  --bs-pagination-hover-bg: #b4a6bf;
+  --bs-pagination-hover-border-color: #503b4b;
+  --bs-pagination-active-color: #f6e9ee;
+  --bs-pagination-active-bg: #503b4b;
+  --bs-pagination-active-border-color: #503b4b;
+  --bs-pagination-disabled-color: #665461;
+  --bs-pagination-disabled-bg: #c8b7c1;
+  --bs-pagination-disabled-border-color: #8d7588;
+  --bs-pagination-focus-color: #392a36;
+  --bs-pagination-focus-bg: #b4a6bf;
+  --bs-pagination-focus-box-shadow: 0 0 0 3px rgba(80, 59, 75, 0.2);
+}
+
+/* 12. Layout adjustments for smaller screens */
+@media (max-width: 767px) {
+  .care-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+    margin-right: 8px;
+  }
+
+  .care-photo {
+    width: 85%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  #petCarousel {
+    padding: 8px;
+  }
+
+  #petCarousel img {
+    height: 250px;
+  }
+
+  #careForm {
+    padding: 20px 16px;
+  }
+
+  .care-intro::before,
+  .care-intro::after {
+    width: 48px;
+    height: 32px;
+    top: -13px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tab-pane .row > div {
+    width: calc((100% - 32px) / 3);
+  }
+}
+/* Clear form error messages */
+#careForm .invalid-feedback {
+  color: #702446;
+  font-weight: 600;
+}
+
+#careForm .is-invalid {
+  border: 2px solid #8b254e;
+}
+/* Put slideshow captions below photos on phones */
+@media (max-width: 576px) {
+  #petCarousel .carousel-caption {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    margin-top: 8px;
+    padding: 16px;
+    min-height: 120px;
+    background-color: #503b4b;
+  }
+
+  #petCarousel .carousel-caption h2 {
+    font-size: 1.2rem;
+  }
+
+  #petCarousel .carousel-caption p {
+    font-size: 0.95rem;
+  }
+
+  /* Keep the arrows beside the photo */
+  #petCarousel .carousel-control-prev,
+  #petCarousel .carousel-control-next {
+    top: 8px;
+    bottom: auto;
+    height: 250px;
+  }
+}

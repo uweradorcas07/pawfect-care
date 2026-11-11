@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>Pawfect Care | Gallery</title>
+
+  <!-- Bootstrap styles -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Our own styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          🐾 Pawfect Care
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pet-care.html">Pet Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animal-directory.html">
+                Animal Directory
+              </a>
+            </li>
+            <li class="nav-item">
+<a class="nav-link active" aria-current="page"
+   href="gallery.html">Gallery</a>          
+    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="care-planner.html">Care Planner</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main class="container py-4">
+  <nav aria-label="Breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+    </ol>
+  </nav>
+
+  <h1>Animal Gallery</h1>
+  <p class="lead">
+    Three little faces. Three reasons to love animals.
+    Meet the companions featured on our homepage.
+  </p>
+
+  <!-- Animal cards -->
+  <div class="row g-4 mt-2">
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="card animal-card h-100">
+        <img src="images/dog.jpg" class="card-img-top"
+             alt="A cream-coloured golden retriever puppy resting on grass">
+        <div class="card-body d-flex flex-column">
+          <h2 class="card-title h4">A loyal companion</h2>
+          <p class="card-text">
+            Resting in the grass. Taking cuteness very seriously.
+          </p>
+          <button type="button" class="btn btn-success mt-auto"
+                  data-bs-toggle="modal" data-bs-target="#puppyDetails">
+            🐾 Meet the puppy
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="card animal-card h-100">
+        <img src="images/cat.jpg" class="card-img-top"
+             alt="A white kitten lying on a pink blanket">
+        <div class="card-body d-flex flex-column">
+          <h2 class="card-title h4">A curious little soul</h2>
+          <p class="card-text">
+            Tiny paws, a pink blanket, and a very important nap to consider.
+          </p>
+          <button type="button" class="btn btn-success mt-auto"
+                  data-bs-toggle="modal" data-bs-target="#kittenDetails">
+            🐾 Meet the kitten
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="card animal-card h-100">
+        <img src="images/rabbit.jpg" class="card-img-top"
+             alt="A white rabbit sitting on green grass">
+        <div class="card-body d-flex flex-column">
+          <h2 class="card-title h4">Small paws, big charm</h2>
+          <p class="card-text">
+            White fur, tall ears, and a lawn full of things to investigate.
+          </p>
+          <button type="button" class="btn btn-success mt-auto"
+                  data-bs-toggle="modal" data-bs-target="#rabbitDetails">
+            🐾 Meet the rabbit
+          </button>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+  <!-- Credits for photos used throughout Pawfect Care -->
+  <section class="mt-4" aria-labelledby="photoCreditsTitle">
+    <h2 id="photoCreditsTitle" class="h5">Behind the cute faces</h2>
+    <p class="small mb-2">
+      These photos are used on Home, Pet Care, and Gallery.
+      Thank you to the photographers who captured them.
+      A gentle colour filter is applied to match our scrapbook theme.
+    </p>
+    <ul class="small">
+      <li>
+        Puppy photo by
+        <a href="https://www.pexels.com/photo/adorable-golden-retriever-puppy-on-lush-grass-35276154/">JacLou- DL on Pexels</a>.
+      </li>
+      <li>
+        Kitten photo by
+        <a href="https://www.pexels.com/photo/close-up-of-a-white-kitten-lying-on-a-pink-blanket-18848682/">Anastasia Lashkevich on Pexels</a>.
+      </li>
+      <li>
+        Rabbit photo by
+        <a href="https://www.pexels.com/photo/white-rabbit-on-green-grass-3828097/">Smooth Click on Pexels</a>.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Puppy information box -->
+  <div class="modal fade" id="puppyDetails" tabindex="-1"
+       aria-labelledby="puppyTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="puppyTitle">Meet the puppy</h2>
+          <button type="button" class="btn-close"
+                  data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            This golden retriever puppy is resting in the grass.
+            Its pale coat and relaxed pose make it a lovely face for Pawfect Care.
+          </p>
+          <p class="mb-0">
+            For me, the puppy represents the loyalty and companionship
+            that make animals such a special part of our lives.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kitten information box -->
+  <div class="modal fade" id="kittenDetails" tabindex="-1"
+       aria-labelledby="kittenTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="kittenTitle">Meet the kitten</h2>
+          <button type="button" class="btn-close"
+                  data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            This white kitten is lying on a pink blanket, looking towards the camera.
+            The soft setting fits our scrapbook theme, and those tiny paws
+            certainly know how to steal the spotlight.
+          </p>
+          <p class="mb-0">
+            I chose this photo to celebrate the quiet moments
+            we share with animals, as well as their playful curiosity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rabbit information box -->
+  <div class="modal fade" id="rabbitDetails" tabindex="-1"
+       aria-labelledby="rabbitTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="rabbitTitle">Meet the rabbit</h2>
+          <button type="button" class="btn-close"
+                  data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            This white rabbit is sitting on grass with its ears upright.
+            Its outdoor portrait brings a little garden calm to the gallery.
+          </p>
+          <p class="mb-0">
+            Including a rabbit celebrates smaller companions too.
+            Every animal deserves kindness, attention, and love.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+  <footer class="border-top py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">🐾 Pawfect Care</p>
+      <p class="text-body-secondary small mb-0">
+        © 2026 Pawfect Care · A student project made with love for animals.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap makes the mobile menu work -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
